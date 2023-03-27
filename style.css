@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Roboto+Serif:ital,wght@1,600&family=Rye&display=swap');
+*{
+    font-family: 'roboto';
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+.nav-bg{
+    background-color: transparent;
+}
+
+.nav-bg:hover{
+    background-color: rgba(128, 128, 128, 0.115);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.5s ease;
+}
+
+#logo{
+    font-weight: 600;
+    color: #6474E5;
+    border-style: solid;
+    padding-left: 6px;
+    padding-right: 6px;
+
+}
+
+.nav-button{
+    color: black;
+    margin-left: 5px;
+}
+
+.nav-button:hover{
+    background-color: #ccd7f2;
+    border-radius: 10px;
+    color: black;
+    position: sticky fixed;
+    top: 0px;
+    transition: 0.5s ease;
+    text-decoration: underline;
+
+}
+/* Home Page */
+@keyframes profile {
+    from{
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        background-color: #0082C6;
+        transform: translateX(5%);
+    }
+
+    to{
+        border-top-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        background-color: #93B1E5;
+        transform: translateY(-5%);
+    }
+
+
+}
+
+.pro-pic{
+    height: 400px;
+    width: 400px;
+    border: solid 25px #67708F;
+    border-radius: 50%;
+}
+
+.pro-background{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: profile;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    border-radius: 20%;
+}
+
+.title{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-weight: 600;
+    color: #25295f;
+    font-size: 70px;
+
+}
+
+.align-first-card{
+    margin-top: 80px;
+    margin-left: 40px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 80px;
+    background-image: linear-gradient(#EAA1E8,#84CEE6);
+    border-bottom-right-radius: 99%;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 60px;
+}
+
+/* About Page */
+
+.white-card{
+    width: 75%;
+    border-radius: 25px;
+    padding: 50px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.about-pic{
+    border-radius: 50%;
+    max-height: 400px;
+    max-width: 400px;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.about-pic-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    font-family: 'Roboto Serif', serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #7051EF;
+    text-decoration: underline;
+}
+
+.about-text{
+    font-size: 18px;
+    text-align: justify;
+    border-left-style: solid;
+    padding-left: 15px;
+    border-color: rgba(128, 128, 128, 0.788);
+}
+
+.about-popup{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.story-bg{
+    background-color: #F4F5FF;
+    padding: 25px;
+}
+
+.story-text{
+    font-size: 18px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    border: solid 3px #93b1e598;
+}
+
+.about-me-text{
+    font-weight: 600;
+}
+
+.story-img{
+    border-radius: 50%;
+    border: double 8px;
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
+
+.skill-heading{
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+}
+
+@keyframes bar-animate-95 {
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 95%;
+    }
+}
+
+@keyframes bar-animate-90 {
+    from{
+        width: 0%;
+
+    }
+
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes bar-animate-75 {
+    from{
+        width: 0%;
+
+    }
+
+    to{
+        width: 75%;
+    }
+}
+
+@keyframes bar-animate-85 {
+    from{
+        width: 0%;
+
+    }
+
+    to{
+        width: 75%;
+    }
+}
+
+.bg{
+    background-color: rgba(225, 222, 222, 0.533);
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.bar{
+    transition: 1s ease-in-out;
+    animation-duration: 12s;
+    transition: 1s;
+    animation-iteration-count: infinite;
+    width: 95%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.bar-95{
+    animation-name: bar-animate-95;
+}
+
+.bar-90{
+    animation-name: bar-animate-90;
+}
+
+.bar-75{
+    animation-name: bar-animate-75;
+}
+
+.bar-85{
+    animation-name: bar-animate-85;
+}
+
+
+/* Project Section */
+.project-cards{
+    background-image: linear-gradient(to right,#01CFFF,#8BECFF);
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    padding: 0px;
+    padding-top: 10px;
+    margin-left: 20px;
+    overflow-y: hidden;
+    text-align: justify;
+}
+
+.next-option{
+    border-style: solid;
+    background-color: grey;
+    height: 30px;
+    width: 30px;
+    margin: 100px;
+}
+
+.description-bg{
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 10px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.margin{
+    margin-top: 150px;
+}
+
+.indicators{
+    background-color: rgba(0, 128, 0, 0.556);
+    width: 130px;
+    border-radius: 25px;
+}
+
+.project-img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.project-title{
+    font-weight: 600;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: black;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.805);
+    border-radius: 25px;
+    min-width: 200px;
+    max-width: 80%;
+}
+
+/* Contact Section */
+
+.box-card{
+    width: 103%;
+    border-radius: 25px;
+    padding: 50px;
+    margin-bottom: 60px;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.form-box-size{
+    width: 400px;
+    height: 35px;
+    margin-bottom: 25px;
+}
+
+#formName{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#formEmail{
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#formFeedback{ 
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+/* Footer Section */
+
+.footer-img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.footer-title{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.footer-padding{
+    padding-top: 150px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.vertical-line{
+    border-right: solid 2px rgba(128, 128, 128, 0.567);
+}
+
+.nav-footer-text-color{
+    color: black;
+}
+
+/* Social Media */
+
+
+.social-media-details-box{
+    border: solid 3px grey;
+    border-radius: 20px;
+    text-align: center;
+    color: #363c8f;
+    font-weight: 600;
+    font-size: 17px;
+    padding-top: 10px;
+    background-color: #8becff4f;
+    transition: 0.3s ease;
+}
+
+.account-bold{
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
+/* Dark Mode */
+
+.black-card{
+    background-color: rgba(0, 0, 0, 0.336);
+    border: solid 3px #c60056;
+    color: white;
+}
+
+.footer-card{
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    margin: 0px;
+}
